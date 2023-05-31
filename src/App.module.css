@@ -1,0 +1,231 @@
+body {
+   font-family: "Impact"; 
+   src: url("../src/fonts/Impact.ttf") format("truetype"); 
+   font-style: normal; 
+   font-weight: normal;
+}
+
+.headerWrap {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 0 34px;
+}
+
+.footer {
+   display: flex;
+   justify-content: space-between;
+}
+
+.headerWrap, footer {
+   height: 56px;
+   background: linear-gradient(180deg, #8000FF 0%, #9E00FF 40.42%, #61009C 100%),
+   linear-gradient(0deg, #913BFF, #913BFF);
+}
+
+.roundBtn {
+   background: radial-gradient(90.6% 83.7% at 50% 16.3%, #FF00E5 6.04%, #9501FF 100%),
+   linear-gradient(0deg, rgba(255, 255, 255, 0.32), rgba(255, 255, 255, 0.32));
+   border-radius: 50%;
+   width: 38px;
+   height: 38px;
+   border: none;
+   cursor: pointer;
+
+   font-size: 20px;
+   font-weight: 400;
+   color: #c4bebe;
+   text-shadow: 0px 2px 2px #330E4F;
+}
+
+.roundBtnWrap {
+   position: relative;
+}
+
+.stars, .balance {
+   text-align: center;
+   padding: 6px 0;
+   background-color: #370063;
+   border: 1px solid #FFB800;
+   box-shadow: inset 0px 4px 3px rgba(32, 0, 65, 0.91);
+   border-radius: 18.5px
+}
+
+.stars {
+   min-width: 241px;
+   position: relative;
+   color: transparent;
+	background-clip: text;
+	background-image: linear-gradient(180deg, #0066FF 0%, #BD00FF 100%);
+   display: inline-block;
+}
+
+.starsWrap {
+   background: #370063;
+   border-radius: 18.5px;
+}
+
+.starIcon {
+   width: 47px;
+   position: absolute;
+   left: -8px;
+   top: -8px;
+}
+
+.balance {
+   text-align: center;
+   min-width: 212px;
+   position: relative;
+   color: transparent;
+	background-clip: text;
+	background-image: linear-gradient(180deg, #0066FF 0%, #BD00FF 100%);
+   display: inline-block;
+}
+
+.balanceWrap {
+   background: #370063;
+   border-radius: 18.5px;
+}
+
+.balanceIcon {
+   width: 39px;
+   position: absolute;
+   left: 9px;
+   top: 3px;
+}
+
+.backIcon {
+   position: absolute;
+   left: 13px;
+   top: 10px;
+   cursor: pointer;
+}
+
+.footer {
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+}
+
+.countBid {
+   background: linear-gradient(180deg, #EBFF00 0%, #FFA800 100%);
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+   background-clip: text;
+   text-shadow: 0px 4px 10px rgba(250, 255, 0, 0.62);
+}
+
+.bidContainer {
+   display: flex;
+   align-items: center;
+}
+
+.bidNumContainer {
+   background: #320950;
+   padding: 7px 14px;
+   border-radius: 10px;
+   margin: 0 13px;
+}
+
+.winContainer {
+   display: flex;
+   justify-content: space-between;
+   padding: 7px 14px;
+   background: #320950;
+   border-radius: 10px;
+}
+
+.win {
+   margin-right: 37px;
+   background: linear-gradient(180deg, #FFFFFF 0%, #1DC9FF 100%);
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+   background-clip: text;
+
+}
+
+.winNum {
+   background: linear-gradient(180deg, #EBFF00 0%, #FFA800 100%);
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+   background-clip: text;
+   text-shadow: 0px 4px 10px rgba(250, 255, 0, 0.62);
+}
+
+.spin {
+   font-weight: 900;
+   padding: 11px 27px;
+   background: linear-gradient(180deg, #70FF00 0%, #008405 100%);
+   border: 1px solid #FFB800;
+   box-shadow: 0px 4px 4px rgba(36, 255, 0, 0.27), inset 0px -6px 4px rgba(0, 255, 56, 0.26), inset 0px 4px 4px rgba(255, 247, 207, 0.65);
+   border-radius: 11px;
+   color: #c1fa9d;
+}
+
+@media (max-width: 750px) {
+   
+   .stars {
+      min-width: 150px;
+   }
+
+   .balance {
+      min-width: 200px;
+   }
+}
+
+@media (max-width: 550px) {
+   
+   .spin {
+      padding: 7px 15px;
+   }
+
+   .headerWrap {
+      flex-direction: column;
+      height: auto;
+   }
+
+   .starsWrap {
+      margin-bottom: 10px;
+      margin-top: 10px;
+   }
+
+   .stars {
+      min-width: 250px;
+   }
+
+   .balanceWrap {
+      margin-bottom: 8px;
+   }
+
+   .balance {
+      min-width: 250px;
+   }
+
+   .wheelColumn {
+      padding: 10px 0;
+   }
+
+   .back {
+      position: absolute;
+      left: 10px;
+      top: 10px;
+   }
+
+   footer {
+      flex-direction: column;
+      height: auto;
+      padding: 10px 0;
+   }
+
+   .bidNumContainer {
+      width: 150px;
+      text-align: center;
+      margin-bottom: 8px;
+   }
+
+   .winContainer {
+      width: 150px;
+      margin-bottom: 8px;
+   }
+
+}

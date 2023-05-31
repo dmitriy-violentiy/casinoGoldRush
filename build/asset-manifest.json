@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/static/css/main.87a090d2.css",
+    "main.js": "/static/js/main.621ff59e.js",
+    "static/media/Impact.ttf": "/static/media/Impact.0294f8285a2493417c09.ttf",
+    "static/media/slot1.png": "/static/media/slot1.3e1255f3168ec60175de.png",
+    "static/media/slot3.png": "/static/media/slot3.6bfa1bf981d98d3689bf.png",
+    "index.html": "/index.html",
+    "main.87a090d2.css.map": "/static/css/main.87a090d2.css.map",
+    "main.621ff59e.js.map": "/static/js/main.621ff59e.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.87a090d2.css",
+    "static/js/main.621ff59e.js"
+  ]
+}
